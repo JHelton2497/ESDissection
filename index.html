@@ -1,1 +1,273 @@
-rando
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Onn Mini Rugged Speaker Dissection</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header>
+    <h1>Onn Mini Rugged Speaker Dissection</h1>
+    <p>By Cody Swann | Embedded Systems </p>
+  </header>
+
+ <nav>
+        <ul>
+            <li><a href="#intro">Introduction</a></li>
+            <li><a href="#market-analysis">Market Analysis</a></li>
+            <li><a href="#photo-journal">Dissection Photo Journal</a></li>
+            <li><a href="#operation">Product Operation</a></li>
+            <li><a href="#bom">Bill of Materials</a></li>
+            <li><a href="#schematic">Schematic</a></li>
+            <li><a href="#analysis">Product Analysis</a></li>
+            <li><a href="#reassembly">Product Reassembly</a></li>
+            <li><a href="#lessons">Lessons Learned</a></li>
+            <li><a href="#download">Download Report</a></li>
+        </ul>
+    </nav>
+
+  <main>
+    <section id="intro">
+      <h2>1. Introduction</h2>
+      <p>My name is Cody Swann and I am a junior at Mississippi State University in Computer Engineering. This is my dissection project for Embedded Systems (ECE 4724).
+      </p> The device that I chose is the Onn Mini Rugged Bluetooth Speaker. I chose this speaker because of its compact design, its use of wireless audio technology, and my interest in understanding how consumer electronic products manage power, signal processing, and connectivity in small packages.</p>
+        </p>
+    </section>
+
+    <section id="market-analysis">
+      <h2>2. Market Analysis</h2>
+      <h3>Product History</h3>
+      <p>The Onn Mini Rugged Speaker is a product sold under Walmart’s exclusive electronics brand, Onn. Onn provides a variety of low-cost tech gadgets and accessories such as headphones, speakers, and streaming devices. The Onn brand was launched by Walmart to offer consumers affordable alternatives to higher-end electronics, and its product line continues to expand with budget-conscious buyers in mind.</p>
+      <p>The Mini Rugged Speaker is designed to be compact, durable, and water-resistant, catering to users who want a portable audio solution without breaking the bank. It typically features Bluetooth connectivity, a rechargeable battery, simple controls, and rugged rubberized housing to withstand minor drops or splashes.</p>
+
+      <h3>Where to Find the Product</h3>
+      <ul>
+        <li><a href="https://www.walmart.com" target="_blank">Walmart Product Page</a></li>
+        <li>Other third-party marketplaces such as Amazon, eBay, and Mercari occasionally carry similar models.</li>
+      </ul>
+
+      <h3>Price Comparison</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Source</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Walmart</td>
+            <td>$9.88 (New)</td>
+          </tr>
+          <tr>
+            <td>Amazon</td>
+            <td>$11.99 (Similar Model)</td>
+          </tr>
+          <tr>
+            <td>eBay</td>
+            <td>$6.00 - $10.00 (Used)</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Comparable Products</h3>
+      <p>Other brands offering similar mini Bluetooth speakers include JBL Go, Anker Soundcore Mini, and Sony SRS-XB series. These tend to feature similar connectivity and ruggedness, but at a higher price point. The Onn speaker fills the budget niche with fewer frills but a surprising amount of durability and performance for the price.</p>
+    </section>
+
+     <section id="photo-journal">
+        <h2>Dissection Photo Journal</h2>
+        <p>This section describes the disassembly process of the Onn Mini Rugged Speaker. Each image corresponds to a specific stage in the dissection.</p>
+
+        <div class="image-section">
+            <img src="images/ES_1.jpeg" alt="Prepacked Speaker">
+          <div class="image-description">
+          <strong>Initial View:</strong>
+            <p>Description of the image goes here. Replace this text with your own.</p>
+        </div>
+          </div>
+       
+        <div class="image-section">
+            <img src="images/ES_2.jpeg" alt="Back View of Package">
+          <div class="image-description">
+          <strong>Initial View:</strong>
+            <p>Description of the image goes here. Replace this text with your own.</p>
+        </div>
+          </div>
+       
+        <div class="image-section">
+            <img src="images/ES_3.jpeg" alt="Cutting the Package">
+          <div class="image-description">
+          <strong>Initial View:</strong>
+            <p>Description of the image goes here. Replace this text with your own.</p>
+      </div>
+          </div>
+
+               <div class="image-section">
+            <img src="images/ES_4.jpeg" alt="Prepacked Speaker">
+                 <div class="image-description">
+                 <strong>Initial View:</strong>
+            <p>Description of the image goes here. Replace this text with your own.</p>
+        </div>
+        </div>
+         
+        <div class="image-section">
+            <img src="images/ES_5.jpeg" alt="Back View of Package">
+          <div class="image-description">
+          <strong>Initial View:</strong>
+            <p>Description of the image goes here. Replace this text with your own.</p>
+        </div>
+          </div>
+       
+        <div class="image-section">
+            <img src="images/ES_6.jpeg" alt="Cutting the Package">
+          <div class="image-description">
+          <strong>Initial View:</strong>
+            <p>Description of the image goes here. Replace this text with your own.</p>
+      </div>
+          </div>
+         
+               <div class="image-section">
+            <img src="images/ES_7.jpeg" alt="Prepacked Speaker">
+                 <div class="image-description">
+                 <strong>Initial View:</strong>
+            <p>Description of the image goes here. Replace this text with your own.</p>
+        </div>
+                 </div>
+       
+        <div class="image-section">
+            <img src="images/ES_8.jpeg" alt="Back View of Package">
+          <div class="image-description">
+          <strong>Initial View:</strong>
+            <p>Description of the image goes here. Replace this text with your own.</p>
+        </div>
+          </div>
+       
+        <div class="image-section">
+            <img src="images/ES_3.jpeg" alt="Cutting the Package">
+          <div class="image-description">
+          <strong>Initial View:</strong>
+            <p>Description of the image goes here. Replace this text with your own.</p>
+      </div>
+</div>
+         
+               <div class="image-section">
+            <img src="images/ES_9.jpeg" alt="Prepacked Speaker">
+                 <div class="image-description">
+                 <strong>Initial View:</strong>
+            <p>Description of the image goes here. Replace this text with your own.</p>
+        </div>
+                 </div>
+       
+        <div class="image-section">
+            <img src="images/ES_10.jpeg" alt="Back View of Package">
+          <div class="image-description">
+          <strong>Initial View:</strong>
+            <p>Description of the image goes here. Replace this text with your own.</p>
+        </div>
+          </div>
+       
+        <div class="image-section">
+            <img src="images/ES_11.jpeg" alt="Cutting the Package">
+          <div class="image-description">
+          <strong>Initial View:</strong>
+            <p>Description of the image goes here. Replace this text with your own.</p>
+      </div>
+    </div>
+         
+               <div class="image-section">
+            <img src="images/ES_12.jpeg" alt="Prepacked Speaker">
+                 <div class="image-description">
+                 <strong>Initial View:</strong>
+            <p>Description of the image goes here. Replace this text with your own.</p>
+        </div>
+                 </div>
+       
+        <div class="image-section">
+            <img src="images/ES_13.jpeg" alt="Back View of Package">
+          <div class="image-description">
+          <strong>Initial View:</strong>
+            <p>Description of the image goes here. Replace this text with your own.</p>
+        </div>
+          </div>
+       
+        <div class="image-section">
+            <img src="images/ES_14.jpeg" alt="Cutting the Package">
+          <div class="image-description">
+          <strong>Initial View:</strong>
+            <p>Description of the image goes here. Replace this text with your own.</p>
+      </div>
+          </div>
+         
+               <div class="image-section">
+            <img src="images/ES_15.jpeg" alt="Prepacked Speaker">
+                 <div class="image-description">
+                 <strong>Initial View:</strong>
+            <p>Description of the image goes here. Replace this text with your own.</p>
+        </div>
+                 </div>
+       
+        <div class="image-section">
+            <img src="images/ES_16.jpeg" alt="Back View of Package">
+          <div class="image-description">
+          <strong>Initial View:</strong>
+            <p>Description of the image goes here. Replace this text with your own.</p>
+        </div>
+          </div>
+    </section>
+
+    <section id="operation">
+        <h2>Product Operation</h2>
+        <p>Usage modes, timing diagrams, and interface notes will go here.</p>
+    </section>
+   
+    <section id="bom">
+        <h2>Bill of Materials</h2>
+        <p>List of all components with their respective quantities and costs will go here.</p>
+    </section>
+
+    <section id="schematic">
+        <h2>Schematic</h2>
+        <p>Placeholder for the schematic diagram of the Onn Mini Rugged Speaker.</p>
+    </section>
+   
+    <section id="analysis">
+           <h2>7. Product Analysis</h2>
+            <p>The speaker contains multiple subsystems including:</p>
+            <ul>
+                <li><strong>Power management:</strong> IP4056 (battery charging IC)</li>
+                <li><strong>Audio amplification:</strong> LTK5302 chip</li>
+                <li><strong>Bluetooth module:</strong> ATS2853</li>
+            </ul>
+            <p>There are approximately:</p>
+            <ul>
+                <li>~16 capacitors/resistors near the IP4056</li>
+                <li>~18 around the LTK5302</li>
+                <li>~24 near the ATS2853</li>
+            </ul>
+            <p>Example cost breakdown: if each passive component averages $0.01 and there are 58, that totals ~$0.58 in passives.</p>
+        </section>
+   
+
+    <section id="reassembly">
+        <h2>Reassembly</h2>
+        <p>Once the internal components were examined and photographed, the speaker was reassembled. The power button was tested and the speaker successfully powered on, reconnected to Bluetooth, and played audio as expected.</p>
+    </section>
+
+    <section id="lessons">
+        <h2>Lessons Learned</h2>
+             <p>This project provided a hands-on understanding of embedded system integration in consumer electronics. Key takeaways included PCB trace routing, system-level design around microcontrollers, and power/audio management.</p>
+    </section>
+
+    <section id="download">
+        <h2>Download Report</h2>
+        <p><a href="Onn_Speaker_Dissection_Report.pdf" download>Click here to download the full project report as a PDF.</a></p>
+    </section>
+ 
+</main>
+  <footer>
+    <p>&copy; 2025 Cody Swann | Mississippi State University</p>
+  </footer>
+</body>
+</html>
+
