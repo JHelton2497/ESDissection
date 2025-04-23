@@ -278,128 +278,20 @@
                                      <ul>
                                          <li>(In)        5x  SPST switches</li>
                                          <li>(Out)       1x  four digit seven segment display</li>
-                                         <li>(In)        2x  USB-A port</li>
-                                         <li>(In)        2x  USB-C port</li>
+                                         <li>(Out)       2x  USB-A port</li>
+                                         <li>(In)        1x  USB-C port</li>
+                                         <li>(Out)       1x  USB-C port</li>
+                                         <li>(Out)       1x  Fan motor</li>
+                                         <li>(Out)       1x  LED strip</li>
                                      </ul>
                                  </div>
                              </div>
                              <div class="row mg-sm">
                                  <p>
-                                     The inputs to the speaker allow the user to supply a variety of audio sources and provide control over the playback of that audio.  
-                                     The SPST switches respond to a single short press and to a single long press.  The switches have two markings – one on the switch surface and one on the plastic above the switch.  
-                                     The assumed intention of the designers was that the marking on the switch surface designated a short-press action, and the marking on the plastic designated a long-press action.  
-                                     However, there is an inconsistency with the markings because Switch 1 and Switch 2 follow the assumed intentions, but Switch 3 and Switch 4 have the markings reversed.  
-                                     For a user, this is a confusing design flaw.  Switch 1 is used to select the operational mode of the device on a short press, and it begins the Bluetooth pairing sequence on a long press.  
-                                     Switch 2 is used to toggle play and pause of the current audio on a short press, and it answers or hangs up a Bluetooth phone call if the device is in Bluetooth mode.  
-                                     Switch 3 is used to skip to the previous track on a short press, and it decreases volume on a long press.  Switch 4 is used to skip to the next track on a short press, and it increases volume on a long press.  
-                                     The SPDT switch is used to turn the device on and off.  The microphone is used to support Bluetooth phone calls.  
-                                     From testing, this microphone has a range of approximately two feet before the person on the other end of the phone could not hear what was being said.  
-                                     The SD card slot allows the user to play MP3 audio files from a memory card.  The Micro-USB port is multi-functional.  It charges the device and receives the line-in audio and serves as an FM radio antenna.  
+                                     The devices contains 5 input SPST switches. They specifically are the LED mode switch, LED color switch, power on/off switch, fan motor decrement speed switch, and fan motor increment speed switch. There is also the input USB-C port which the computer would be plugged into. This is so the other ports on the device can connect to the laptop. Additionally, there is the seven segment display to show the fan speed to the user.
                                  </p>
                                  <p>
-                                     The outputs to the speaker revolve around transducing the audio signal to acoustic vibrations. The 3.5mm jack is used to drive headphones. 
-                                     This is convenient for a user because the EasyAcc speaker can provide a greater drive strength than some smartphones, which allows the user to connect nicer headphones.  
-                                     The speaker on the top of the device broadcasts the audio to the user.  
-                                 </p>
-                                 <p>
-                                    The Bluetooth module is an input and an output because it performs two-way communication with the paired device to stream audio and control the playback.  
-                                     It also allows the user to receive phone calls on the EasyAcc speaker. 
-                                 </p>
-                             </div>
-                             
-                             <div class="row mg-md">
-                                 <h3>Software Flow Diagram</h3>
-                                 <p>
-                                     The images below show the software flow diagrams that describe the operational flow of the EasyAcc speaker.
-                                 </p>
-                                 <p>
-                                     <i>The images can be selected to view in their full size.</i>
-                                 </p>
-                                 <div class="row mg-sm">
-                                     <div class="column">
-                                         <img src="img/Power_On_Sequence.png" onclick="openFlowDiagramModal(); currentFlowDiagramSlide(1);" class="hover-shadow" width="180" height="270">
-                                     </div>
-                                     <div class="column">
-                                         <img src="img/Bluetooth_FSM.png" onclick="openFlowDiagramModal(); currentFlowDiagramSlide(2);" class="hover-shadow" width="180" height="270">
-                                     </div>
-                                     <div class="column">
-                                         <img src="img/FM_Radio_FSM.png" onclick="openFlowDiagramModal(); currentFlowDiagramSlide(3);" class="hover-shadow" width="180" height="270">
-                                     </div>
-                                     <div class="column">
-                                         <img src="img/Line_In_FSM.png" onclick="openFlowDiagramModal(); currentFlowDiagramSlide(4);" class="hover-shadow" width="180" height="270">
-                                     </div>
-                                     <div class="column">
-                                         <img src="img/SD_Card_FSM.png" onclick="openFlowDiagramModal(); currentFlowDiagramSlide(5);" class="hover-shadow" width="180" height="270">
-                                     </div>
-                                 </div>
-                                 <div id="flow-diagram-modal" class="modal lightbox-modal">
-                                     <span class="lightbox-close cursor" onclick="closeFlowDiagramModal()">&times;</span>
-                                     <div class="modal-content lightbox-modal-content">
-                                         <div class="flow-diagram-slides">
-                                             <div class="numbertext">1 / 5</div>
-                                             <img class="flow-diagram-img" src="img/Power_On_Sequence.png" width=100% height="100%" alt="Flow Diagram - Power On Sequence & High-Level Operation">
-                                         </div>
-                                         <div class="flow-diagram-slides">
-                                             <div class="numbertext">2 / 5</div>
-                                             <img class="flow-diagram-img" src="img/Bluetooth_FSM.png" width=100% height="100%" alt="Finite State Machine Diagram - Bluetooth Operation">
-                                         </div>
-                                         <div class="flow-diagram-slides">
-                                             <div class="numbertext">3 / 5</div>
-                                             <img class="flow-diagram-img" src="img/FM_Radio_FSM.png" width="100%" height="100%" alt="Finite State Machine Diagram - FM Radio Operation">
-                                         </div>
-                                         <div class="flow-diagram-slides">
-                                             <div class="numbertext">4 / 5</div>
-                                             <img class="flow-diagram-img" src="img/Line_In_FSM.png" width="100%" height="100%" alt="Finite State Machine Diagram - Line In Operation">
-                                         </div>
-                                         <div class="flow-diagram-slides">
-                                             <div class="numbertext">5 / 5</div>
-                                             <img class="flow-diagram-img" src="img/SD_Card_FSM.png" width="100%" height="100%" alt="Finite State Machine Diagram - SD Card Operation">
-                                         </div>
- 
-                                         <a class="lightbox-prev" onclick="plusFlowDiagramSlides(-1)">&#10094;</a>
-                                         <a class="lightbox-next" onclick="plusFlowDiagramSlides(1)">&#10095;</a>
-                                         
-                                         <div class="lightbox-caption-container">
-                                             <p id="flow-diagram-caption"></p>
-                                         </div>
-                                     </div>
-                                 </div>
-                                 <br>
-                                 <p>
-                                     The speaker appears to operate using a main application that handles audio playback and interrupts to process user input.  
-                                     The application maintains a circular array of the four modes of operation, listed in order — Bluetooth, FM Radio, Line In, 
-                                     and SD Card.  At power on, the device enters the SD Card mode if the memory card is present, otherwise it enters the Bluetooth mode.  
-                                     The mode is changed when an interrupt is registered from a short press on Switch 1.  On this interrupt, the mode is incremented to 
-                                     progress to the next sequential mode and it wraps around from SD Card to Bluetooth.  The only deviation from this ordering occurs when 
-                                     an SD Card is inserted while the device is in any other mode.  The mode updates immediately to SD Card mode and begins playback.
-                                 </p>
-                                 <p>
-                                     The Bluetooth mode allows for wireless streaming of audio and phone calls from a remote device.  The Bluetooth communication is two-way, 
-                                     which allows for media control on the source device from the speaker switches.  A short press on Switch 2 pauses or plays the media, and 
-                                     a short press on Switch 3 or Switch 4 changes to the previous or next media track.  A long press on Switch 1 begins the Bluetooth pairing 
-                                     process, and a long press on Switch 2 ends an in-progress phone call.  The volume is controlled with long presses on Switch 3 and Switch 4.  
-                                     The Bluetooth mode is the default state unless a SD card is inserted.
-                                 </p>
-                                 <p>
-                                     The FM Radio mode plays audio from local radio stations.  Initially, this mode requires a scan of available radio stations in the area, 
-                                     otherwise it just outputs static.  This scan must be performed with the device connected to a power source, and it begins when a long press 
-                                     interrupt occurs from Switch 2.  Once this scan is performed once, the results are stored on the device, so this mode can be entered any 
-                                     time.  The scan can be performed again to change the list of radio stations if the device is moved to a new area.  In this mode, Switch 3 
-                                     and Switch 4 short presses go to the previous or next radio station in the list, and a Switch 2 short press mutes/unmutes the audio.  
-                                     Switch 3 and Switch 4 long presses decrease/increase the volume.
-                                 </p>
-                                 <p>
-                                     The Line In mode plays audio from a connected auxiliary port.  The Micro-USB cable converts a 3.5mm jack to Micro-USB for input to the 
-                                     speaker.  In this mode, a Switch 2 short press mutes the audio, but does not stop playback on the source device.  A long press on Switch 3 
-                                     or Switch 4 decrements or increments the volume.
-                                 </p>
-                                 <p>
-                                     The SD Card mode plays audio from MP3 files stored on a removable SD card inserted in the device.  The media files are played on continuous 
-                                     loop.  A short press on Switch 2 pauses or plays the audio, and a short press on Switch 3 or Switch 4 changes to the previous or next media 
-                                     file on the memory card.  A long press on Switch 3 or Switch 4 decreases or increases the volume.  This mode takes highest priority over all 
-                                     other modes.  If an SD card is inserted while the speaker is in another mode, the speaker changes to the SD Card mode and begins operation.  
-                                     If an SD card is inserted at power on, the speaker begins in SD Card mode.  If the SD card is removed at any point while the speaker is in SD 
-                                     Card mode, the speaker changes to Bluetooth mode.
+                                     The outputs are a four digit seven segment display, USB ports, fan motor, and LED strip. The number displayed on the seven segment dislay and actual fan motor speed will change depending on the selected fan speed. The LED strip will change mode/color through selection with two specific SPST switches.The USB ports will automatically work if a laptop is plugged into the USB-C input port.
                                  </p>
                              </div>
                              
