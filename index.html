@@ -57,15 +57,15 @@
         <tbody>
           <tr>
             <td>NewEgg</td>
-            <td>$156.99 - $170.00 </td>
+            <td>    $156.99 - $170.00 </td>
           </tr>
           <tr>
             <td>Amazon</td>
-            <td>$80.00 - $110.00 </td>
+            <td>    $80.00 - $110.00 </td>
           </tr>
           <tr>
             <td>eBay</td>
-            <td>$95.00 - $125.00 (Used)</td>
+            <td>    $95.00 - $125.00 (Used)</td>
           </tr>
         </tbody>
       </table>
@@ -364,69 +364,7 @@
                              <img src="Dissection_Photos/ES_Dissection_High_level_diagram.pdf" class="img-responsive center-block" alt="High Level Functional Diagram" />
                              <br><br>
                              
-                             <h3>Electrical Characteristics</h3>
-                             <p>
-                                 The tables and images below describe the electrical characteristics of the EasyAcc speaker.
-                             </p>
-                             <p>
-                                 The frequency response of the speaker is approximately 93Hz to 82kHz, based on the FFT taken during speaker playback. This response is adequate for a small portable speaker 
-                                 but is not competitive with larger speaker systems, which can have responses below 10Hz to over 110kHz.
-                             </p>
-                             <p>
-                                 The table below shows the electrical characteristics observed during testing.  The device specifications state that it can operate for 10 hours without requiring a recharge. 
-                                 Based on the data collected, the device does not come close to meeting this specification when at maximum load.  However, the peak current was used to calculate the battery 
-                                 life, which isn't accurate of the total consumption during operation.  At maximum volume, the current consumption fluctuates from 0.11A to 0.53A with the average being somewhere 
-                                 around 0.22A.  Even at this rate, the speaker has a runtime of 2.25 hours, which does not meet it's runtime specification.  Also to note, the voltage drop that occurred at maximum 
-                                 load is the result of using a 500mA-rated voltage regulator that begins to collapse.  The no-load simulated test showed a steady 0.01A current consumption, which would allow 
-                                 the device to operate for five times the requirement.  The regulator has a minimum supply voltage of 2.75V before it enters shutdown.  The maximum supply voltage to the regulator 
-                                 was not tested because it would most likely cause irreversible damage to the component, but this test could have been performed by increasing the supply voltage until the regulator 
-                                 failed.
-                             </p>
-                             <table>
-                                 <thead>
-                                     <tr>
-                                         <th>Supply Voltage</th>
-                                         <th>Operating Voltage</th>
-                                         <th>Current Draw</th>
-                                         <th>Battery Life</th>
-                                         <th>Test Conditions</th>
-                                     </tr>
-                                 </thead>
-                                 <tbody>
-                                     <tr>
-                                         <td>3.7V</td>
-                                         <td>3.3V</td>
-                                         <td>0.01A</td>
-                                         <td>50 Hours</td>
-                                         <td>
-                                             No speaker output and the device sitting in SD card mode without an SD card inserted. This
-                                             is a simulated no-load test situation.
-                                         </td>
-                                     </tr>
-                                     <tr>
-                                         <td>3.7V</td>
-                                         <td>3.1V</td>
-                                         <td>0.53A (peak)</td>
-                                         <td>0.95 Hours</td>
-                                         <td>
-                                             Maximum speaker output and the device using Bluetooth mode to stream music. This is 
-                                             a simulated maximum-load test situation.
-                                         </td>
-                                     </tr>
-                                     <tr>
-                                         <td>2.75V</td>
-                                         <td>0.0V</td>
-                                         <td>0.0A</td>
-                                         <td>Unlimited Hours</td>
-                                         <td>
-                                             This was the point at which the speaker failed to operate because the voltage regulator did not have 
-                                             sufficient input voltage.  To note, the current consumption increased as the supply voltage decreased, which 
-                                             was to be expected.
-                                         </td>
-                                     </tr>
-                                 </tbody>
-                             </table>
-                             <br><br>
+                             
 
              </section>
                              <section id="operation">
@@ -459,7 +397,7 @@
 
     <section id="lessons">
         <h2>Lessons Learned</h2>
-             <p>This project provided a hands-on understanding of embedded system integration in consumer electronics. Key takeaways included PCB trace routing, system-level design around microcontrollers, and power/audio management.</p>
+             <p>This project provided a hands-on understanding of embedded system integration in consumer electronics. Key takeaways included PCB trace routing, motor speed, and LED management.</p>
     </section>
  
 </main>
