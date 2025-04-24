@@ -299,49 +299,20 @@
                                  <h3>Usage Timing Diagrams</h3>
                                  <div class="row mg-sm">
                                      <div class="col-sm-3">
-                                         <img id="timing-led-diagram" src="img/timing_led.PNG" class="modal-image" alt="LED Pulses Timing Diagrams" width="100%" />
-                                         <div id="timing-led-diagram-modal" class="modal">
+                                         <img id="timing-fan-300-diagram" src="Dissection_Photos/FAN_300_RPM_Waveform.png" class="modal-image" alt="Fan 300 RPM pulses" width="100%" />
+                                         <div id="timing-fan-300-diagram-modal" class="modal">
                                              <span class="close close-modal-image">&times;</span>
-                                             <img class="modal-content" id="timing-led-diagram-modal-img">
-                                             <div class="modal-img-caption" id="timing-led-diagram-modal-caption"></div>
+                                             <img class="modal-content" id="timing-fan-300-diagram-modal-img">
+                                             <div class="modal-img-caption" id="timing-fan-300-diagram-modal-caption"></div>
                                          </div>
                                      </div>
                                      <div class="col-sm-9">
                                          <p>
-                                             The image to the left shows the output from the JL chip that controls the LED.  The period that is high is the time that the LED is on.  
-                                             The LED is a three-lead device to control color output.  Therefore, there are two pins on the JL chip to drive the two 'color' leads on 
-                                             the LED.  The third lead is common reference.  The output from both JL pins is the same as shown, but only one pin is active at a time 
-                                             depending on whether the LED is supposed to display red or blue.  The LED requires more current than the JL microcontroller can source or 
-                                             sink, so the JL chip drives the base leg of a BJT which provides the current drive strength for the LED.
+                                             The image to the left shows the output from the User-interactive chip to the data line of the wires plugged into the fan motor. It shows the signal being sent in order for the motor to only have 300 RPM.
                                          </p>
                                      </div>
                                  </div>
-                                 <div class="row mg-md">
-                                     <div class="col-sm-6">
-                                         <p>
-                                             The images to the right show the input and output from the amplifier. The image to the immediate right is the positive half of the input pulse 
-                                             width modulation (PWM) signal.  The image to the far right is the full signal output from the amplifier to the speaker.  The JL chip drives the 
-                                             amplifier using PWM due to the ease of presenting the digital audio formats in PWM form.
-                                         </p>
-                                     </div>
-                                     <div class="col-sm-3">
-                                         <img id="timing-amplifier-positive-diagram" src="img/timing_amplifier_positive.PNG" class="modal-image" alt="Amplifier Positive Pin PWM Input" width="100%" />
-                                         <div id="timing-amplifier-positive-diagram-modal" class="modal">
-                                             <span class="close close-modal-image">&times;</span>
-                                             <img class="modal-content" id="timing-amplifier-positive-diagram-modal-img">
-                                             <div class="modal-img-caption" id="timing-amplifier-positive-diagram-modal-caption"></div>
-                                         </div>
-                                     </div>
-                                     <div class="col-sm-3">
-                                         <img id="timing-amplifier-full-diagram" src="img/timing_amplifier_full.PNG" class="modal-image" alt="Amplifier Full Wave Output" width="100%" />
-                                         <div id="timing-amplifier-full-diagram-modal" class="modal">
-                                             <span class="close close-modal-image">&times;</span>
-                                             <img class="modal-content" id="timing-amplifier-full-diagram-modal-img">
-                                             <div class="modal-img-caption" id="timing-amplifier-full-diagram-modal-caption"></div>
-                                         </div>
-                                     </div>
-                                 </div>
-                                 
+                                     
                              </div>
  						</div>
  					</div>
