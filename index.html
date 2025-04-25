@@ -537,12 +537,12 @@
         <p>The following table will consist of all Electrical components for both PCBs.</p>
 
         <p>
-                                The values of the SMD capacitors are estimated based on size and color. As the size increases, the capacitance increases; 
-                                and, the color correlates to the material type, which is ceramic in this case. Using these guidelines, common capacitance values are estimated for the SMD capacitors.
+                                The values of the SMD capacitors were not able to be measured and thus no manufacturer or price were obtained. There were also one SMD resistor and inductor that no information was able to be obtained, namely, for the resistor this was because trying to measure it caused a short. 
+		                However for the other inductor, a type and value were able to be obtained but not a manufacturer. Also no manufacturer or price was obtainable for the A19T transistor. The price was also unobtainable for the USB hub MCU. I was also unable to obtain information on the 6-pin IC and the stepper motor for the fan. Additonally, if there is an asterisk next to the model number of a component it means that it is a similar component.
                             </p>
                             <p>
-                                The subtotal for all the electrical components is $109.90. This is based on single-unit purchases from Digikey, so if the components are bought in bulk, then the price would be significantly less. 
-                                The battery alone is equal to the sale price of the entire unit when it was purchased and accounts for approximately one half the cost of the unit when it was not on sale. 
+                                The subtotal for all the electrical components is at least $56.16. This is based on single-unit purchases from Digikey, so if the components are bought in bulk, then the price would be significantly less. 
+                                It is also not counting the price for the plastic parts, screws, PCBs, and components that no price was obtained. 
                             </p>
 							<table>
 								<thead>
@@ -550,10 +550,8 @@
 										<th>Manufacturer</th>
 										<th>Manufacturer P/N</th>
 										<th>Description</th>
-										<th>Purpose</th>
 										<th>Quantity</th>
 										<th>Cost per Unit<br>(USD)</th>
-										<th>Total Cost<br>(USD)</th>
 									</tr>
 								</thead>
 								<tbody>
@@ -561,379 +559,295 @@
 										<td>Beken</td>
 										<td>BK1080</td>
 										<td>FM Stereo Receiver, Low-IF, Mixed Signal Image Rejection, Digital Demodulation</td>
-										<td>Receive FM radio channels and transmit that information using I2C/SMBus to a microcontroller</td>
 										<td>1</td>
-										<td class="dollars">0.73</td>
 										<td class="dollars">0.73</td>
 									</tr>
 									<tr>
 										<td >ViMicroWX</td>
 										<td>WS9623ADMFF</td>
 										<td>Bluetooth Transceiver</td>
-										<td>Connects the main microcontroller to wireless Bluetooth devices using I2C</td>
 										<td>1</td>
-										<td class="dollars">6.00 (estimated)</td>
 										<td class="dollars">6.00 (estimated)</td>
 									</tr>
 									<tr>
 										<td >JL</td>
 										<td>AD1626CH2TIC.H</td>
 										<td>Microcontroller</td>
-										<td>Main logic in the speaker that interconnects all components</td>
 										<td>1</td>
-										<td class="dollars">4.00 (estimated)</td>
 										<td class="dollars">4.00 (estimated)</td>
 									</tr>
                                     <tr>
                                         <td>Abracon LLC</td>
                                         <td>ABM12W-26.0000MHZ-4-B1U-T3</td>
                                         <td>CRYSTAL 26MHZ 4pF 10PPM</td>
-                                        <td>Crystal oscillator to provide clock for ViMicroWX chip</td>
                                         <td>1</td>
-                                        <td class="dollars">1.21</td>
                                         <td class="dollars">1.21</td>
                                     </tr>
                                     <tr>
                                         <td>ON Semiconductor</td>
                                         <td>MMBT3904LT1G</td>
                                         <td>TRANS NPN 40V 0.2A SOT23</td>
-                                        <td>Drive transistor for audio playback</td>
                                         <td>2</td>
                                         <td class="dollars">0.12</td>
-                                        <td class="dollars">0.24</td>
                                     </tr>
                                     <tr>
                                         <td>Everlight Electronics Co Ltd</td>
                                         <td>MV5437</td>
                                         <td>LED BLUE/RED DIFF 5MM ROUND T/H</td>
-                                        <td>LED to provide feedback to the user on the operational state of the speaker</td>
                                         <td>1</td>
-                                        <td class="dollars">0.45</td>
                                         <td class="dollars">0.45</td>
                                     </tr>
                                     <tr>
                                         <td>Adafruit Industries</td>
                                         <td>328</td>
                                         <td>Lithium Ion Polymer Rechargeable Battery - 3.7V 2500mAh</td>
-                                        <td>Battery to power the speaker when not connected to a power source</td>
                                         <td>1</td>
-                                        <td class="dollars">14.95</td>
                                         <td class="dollars">14.95</td>
                                     </tr>
                                     <tr>
                                         <td>CTS Electrocomponents</td>
                                         <td>222HMSAAR</td>
                                         <td>SWITCH TACTILE SPST-NO 0.05A 12V</td>
-                                        <td>Input switches to give the user audio playback control</td>
                                         <td>4</td>
                                         <td class="dollars">0.22</td>
-                                        <td class="dollars">0.88</td>
                                     </tr>
                                     <tr>
                                         <td>C&amp;K</td>
                                         <td>JS102011SAQN</td>
                                         <td>SWITCH SLIDE SPDT 300MA 6V</td>
-                                        <td>Power switch to turn the speaker on/off</td>
                                         <td>1</td>
-                                        <td class="dollars">0.53</td>
                                         <td class="dollars">0.53</td>
                                     </tr>
                                     <tr>
                                         <td>Abracon LLC</td>
                                         <td>AB38T-32.768KHZ</td>
                                         <td>CRYSTAL 32.7680KHZ 12.5PF T/H</td>
-                                        <td>Crystal oscillator to provide clock for the JL chip</td>
                                         <td>1</td>
-                                        <td class="dollars">0.17</td>
                                         <td class="dollars">0.17</td>
                                     </tr>
                                     <tr>
                                         <td>Amphenol FCI</td>
                                         <td>10104110-0001LF</td>
                                         <td>CONN RCPT STD MICRO USB TYPE B</td>
-                                        <td>Micro-USB port for line in audio, recharging, and antenna</td>
                                         <td>1</td>
-                                        <td class="dollars">0.79</td>
                                         <td class="dollars">0.79</td>
                                     </tr>
                                     <tr>
                                         <td>CUI Inc</td>
                                         <td>SJ-3523-SMT-TR</td>
                                         <td>CONN JACK STEREO 3.5MM SMD R/A</td>
-                                        <td>Headphone jack to connect a user's headphones instead of using the speaker</td>
                                         <td>1</td>
-                                        <td class="dollars">1.02</td>
                                         <td class="dollars">1.02</td>
                                     </tr>
                                     <tr>
                                         <td>Molex, LLC</td>
                                         <td>5031821852</td>
                                         <td>MICRO SD NORMAL ULTRALOWPRO8CKTE</td>
-                                        <td>MicroSD card receptacle to play audio from memory device</td>
                                         <td>1</td>
-                                        <td class="dollars">2.33</td>
                                         <td class="dollars">2.33</td>
                                     </tr>
                                     <tr>
                                         <td>CUI Inc</td>
                                         <td>CMC-2742WBL-25L</td>
                                         <td>MIC COND ANALOG OMNI -42DB</td>
-                                        <td>Microphone for phone call support</td>
                                         <td>1</td>
-                                        <td class="dollars">2.42</td>
                                         <td class="dollars">2.42</td>
                                     </tr>
                                     <tr>
                                         <td>JST Sales America Inc</td>
                                         <td>SM02B-GHS-TB(LF)(SN)</td>
                                         <td>CONN HEADER GH SIDE 2POS 1.25MM</td>
-                                        <td>Connects the battery pack to the board</td>
                                         <td>1</td>
-                                        <td class="dollars">0.46</td>
                                         <td class="dollars">0.46</td>
                                     </tr>
                                     <tr>
                                         <td>PUI Audio, Inc.</td>
                                         <td>AS04004PR-R</td>
                                         <td>SPEAKER 4OHM 3W TOP PORT 86DB</td>
-                                        <td>Audio transducer to produce acoustical presence (aka. the speaker)</td>
                                         <td>1</td>
-                                        <td class="dollars">7.65</td>
                                         <td class="dollars">7.65</td>
                                     </tr>
                                     <tr>
                                         <td>Fangtek</td>
                                         <td>FT2820P</td>
                                         <td>4W DUAL-PUMP CLASS-G AUDIO POWER AMPLIFIER</td>
-                                        <td>Voltage regulator to provide steady supply to the electronic components</td>
                                         <td>1</td>
-                                        <td class="dollars">8.08</td>
                                         <td class="dollars">8.08</td>
                                     </tr>
                                     <tr>
                                         <td>Microchip</td>
                                         <td>MIC5219-3.3YM5-TR</td>
                                         <td>IC REG LINEAR 3.3V 500MA SOT23-5</td>
-                                        <td>Voltage regulator to provide steady supply to the electronic components</td>
                                         <td>1</td>
-                                        <td class="dollars">0.93</td>
                                         <td class="dollars">0.93</td>
                                     </tr>
                                     <tr>
 										<td>Yageo</td>
 										<td>RC1206FR-071KL</td>
 										<td>RES SMD 1K OHM 1% 1/4W 1206</td>
-										<td>Various purposes depending on location and connections</td>
 										<td>9</td>
 										<td class="dollars">0.10</td>
-										<td class="dollars">0.90</td>
 									</tr>
                                     <tr>
 										<td>Yageo</td>
 										<td>RC1206JR-0710KL</td>
 										<td>RES SMD 10K OHM 1% 1/4W 1206</td>
-										<td>Various purposes depending on location and connections</td>
 										<td>6</td>
 										<td class="dollars">0.10</td>
-										<td class="dollars">0.60</td>
 									</tr>
                                     <tr>
 										<td>Yageo</td>
 										<td>RC1206JR-070RL</td>
 										<td>RES SMD 0 OHM JUMPER 1/4W 1206</td>
-										<td>Jumper various components together and provide debug points</td>
 										<td>6</td>
 										<td class="dollars">0.10</td>
-										<td class="dollars">0.60</td>
 									</tr>
                                     <tr>
 										<td>Yageo</td>
 										<td>RC1206JR-076K2L</td>
 										<td>RES SMD 6.2K OHM 5% 1/4W 1206</td>
-										<td>Current limiting on input switch</td>
 										<td>1</td>
-										<td class="dollars">0.10</td>
 										<td class="dollars">0.10</td>
 									</tr>
                                     <tr>
 										<td>Yageo</td>
 										<td>RC1206JR-0768KL</td>
 										<td>RES SMD 68K OHM 5% 1/4W 1206</td>
-										<td>RC filtering</td>
 										<td>1</td>
-										<td class="dollars">0.10</td>
 										<td class="dollars">0.10</td>
 									</tr>
                                     <tr>
 										<td>Yageo</td>
 										<td>RC1206JR-076K8L</td>
 										<td>RES SMD 6.8K OHM 5% 1/4W 1206</td>
-										<td>Necessary for proper operation of the JL chip</td>
 										<td>2</td>
 										<td class="dollars">0.10</td>
-										<td class="dollars">0.20</td>
 									</tr>
                                     <tr>
 										<td>Yageo</td>
 										<td>RC1206JR-074K7L</td>
 										<td>RES SMD 4.7K OHM 5% 1/4W 1206</td>
-										<td>Various purposes depending on location and connections</td>
 										<td>3</td>
 										<td class="dollars">0.10</td>
-										<td class="dollars">0.30</td>
 									</tr>
                                     <tr>
 										<td>Yageo</td>
 										<td>RC1206JR-0747RL</td>
 										<td>RES SMD 47 OHM 5% 1/4W 1206</td>
-										<td>Various purposes depending on location and connections</td>
 										<td>3</td>
 										<td class="dollars">0.10</td>
-										<td class="dollars">0.30</td>
 									</tr>
                                     <tr>
 										<td>Yageo</td>
 										<td>RC1206JR-0733RL</td>
 										<td>RES SMD 33 OHM 5% 1/4W 1206</td>
-										<td>Various purposes depending on location and connections</td>
 										<td>2</td>
 										<td class="dollars">0.10</td>
-										<td class="dollars">0.20</td>
 									</tr>
                                     <tr>
 										<td>Yageo</td>
 										<td>RC1206JR-07120KL</td>
 										<td>RES SMD 120K OHM 5% 1/4W 1206</td>
-										<td>Necessary for proper operation of the JL chip</td>
 										<td>1</td>
-										<td class="dollars">0.10</td>
 										<td class="dollars">0.10</td>
 									</tr>
                                     <tr>
 										<td>Yageo</td>
 										<td>RC1206JR-072ML</td>
 										<td>RES SMD 2M OHM 5% 1/4W 1206</td>
-										<td>Necessary for proper operation of the JL chip</td>
 										<td>1</td>
-										<td class="dollars">0.10</td>
 										<td class="dollars">0.10</td>
 									</tr>
                                     <tr>
 										<td>Yageo</td>
 										<td>RC1206FR-07100KL</td>
 										<td>RES SMD 100K OHM 5% 1/4W 1206</td>
-										<td>Necessary for proper operation of the JL chip</td>
 										<td>1</td>
-										<td class="dollars">0.10</td>
 										<td class="dollars">0.10</td>
 									</tr>
                                     <tr>
 										<td>Yageo</td>
 										<td>RC1206JR-07180RL</td>
 										<td>RES SMD 180 OHM 5% 1/4W 1206</td>
-										<td>Necessary for proper operation of the JL chip</td>
 										<td>1</td>
-										<td class="dollars">0.10</td>
 										<td class="dollars">0.10</td>
 									</tr>
                                     <tr>
 										<td>Yageo</td>
 										<td>RC1206JR-072K2L</td>
 										<td>RES SMD 2.2K OHM 5% 1/4W 1206</td>
-										<td>Necessary for wireless communications with the ViMicroWX chip</td>
 										<td>1</td>
-										<td class="dollars">0.10</td>
 										<td class="dollars">0.10</td>
 									</tr>
                                     <tr>
 										<td>Yageo</td>
 										<td>RC1206JR-071K8L</td>
 										<td>RES SMD 1.8K OHM 5% 1/4W 1206</td>
-										<td>Necessary for driving headphone jack from JL chip</td>
 										<td>1</td>
-										<td class="dollars">0.10</td>
 										<td class="dollars">0.10</td>
 									</tr>
                                     <tr>
 										<td>Yageo</td>
 										<td>RC1206FR-0724KL</td>
 										<td>RES SMD 24K OHM 5% 1/4W 1206</td>
-										<td>Necessary for driving speaker</td>
 										<td>1</td>
-										<td class="dollars">0.10</td>
 										<td class="dollars">0.10</td>
 									</tr>
                                     <tr>
 										<td>Yageo</td>
 										<td>RC1206JR-072KL</td>
 										<td>RES SMD 2K OHM 5% 1/4W 1206</td>
-										<td>Used in the voltage regulator circuit</td>
 										<td>1</td>
-										<td class="dollars">0.10</td>
 										<td class="dollars">0.10</td>
 									</tr>
                                     <tr>
                                         <td>Nichicon</td>
                                         <td>UHE2A221MHD</td>
                                         <td>CAP ALUM 220UF 20% 100V RADIAL</td>
-                                        <td>Speaker output filtering and protection</td>
                                         <td>2</td>
                                         <td class="dollars">0.91</td>
-                                        <td class="dollars">1.82</td>
                                     </tr>
                                     <tr>
                                         <td>Murata Electronics</td>
                                         <td>GRM188R61A105KA61D</td>
                                         <td>CAP CER 1UF 10V X5R 0603</td>
-                                        <td>Power conditioning for chips</td>
                                         <td>38</td>
                                         <td class="dollars">0.12</td>
-                                        <td class="dollars">4.56</td>
                                     </tr>
                                     <tr>
                                         <td>Murata Electronics</td>
                                         <td>GRM155R61A104KA01D</td>
                                         <td>CAP CER 0.1UF 10V X5R 0402</td>
-                                        <td>Power conditioning for chips</td>
                                         <td>4</td>
                                         <td class="dollars">0.10</td>
-                                        <td class="dollars">0.40</td>
                                     </tr>
                                     <tr>
                                         <td>Murata Electronics</td>
                                         <td>GRM155R60G106ME44D</td>
                                         <td>CAP CER 10UF 4V X5R 0402</td>
-                                        <td>Power conditioning for chips</td>
                                         <td>5</td>
                                         <td class="dollars">0.13</td>
-                                        <td class="dollars">0.65</td>
                                     </tr>
                                     <tr>
                                         <td>Murata Electronics</td>
                                         <td>GRM188R61C225KE15D</td>
                                         <td>CAP CER 2.2UF 16V X5R 0603</td>
-                                        <td>Power conditioning for chips</td>
                                         <td>4</td>
                                         <td class="dollars">0.13</td>
-                                        <td class="dollars">0.42</td>
                                     </tr>
                                     <tr>
                                         <td>Murata Electronics</td>
                                         <td>GRM32EC80E227ME05L</td>
                                         <td>CAP CER 220UF 2.5V X6S 1210</td>
-                                        <td>Power conditioning for chips</td>
                                         <td>1</td>
-                                        <td class="dollars">1.70</td>
                                         <td class="dollars">1.70</td>
                                     </tr>
                                     <tr>
                                         <td>Yageo</td>
                                         <td>CC0603MRX5R5BB226</td>
                                         <td>CAP CER 22UF 6.3V X5R 0603</td>
-                                        <td>Power conditioning for chips</td>
                                         <td>4</td>
                                         <td class="dollars">0.28</td>
-                                        <td class="dollars">1.12</td>
                                     </tr>
 								</tbody>
 							</table>
