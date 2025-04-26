@@ -132,10 +132,34 @@ a:hover {
         text-align: center;
     }
     
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-  padding: 6px;
+#analysis table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#analysis tbody tr:nth-child(odd) {
+    background: rgba(243,83,66,0.25);
+}
+
+#analysis th {
+    background: #333;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+#analysis td, #analysis th {
+    padding: 6px;
+    border: 1px solid #CCC;
+}
+
+#analysis td {
+    text-align: left;
+    min-width: 70px;
+}
+
+.dollars:before {
+    content: "$ ";
 }
     
 }
