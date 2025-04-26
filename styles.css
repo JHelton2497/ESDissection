@@ -124,10 +124,6 @@ a:hover {
     border-collapse: collapse;
 }
 
-#bom tbody tr:nth-child(odd) {
-    background: rgba(243,83,66,0.25);
-}
-
 #bom th {
     background: #333;
     color: white;
@@ -135,7 +131,7 @@ a:hover {
     text-align: center;
 }
 
-#bom td, #analysis th {
+#bom td, #bom th {
     padding: 6px;
     border: 1px solid #CCC;
 }
