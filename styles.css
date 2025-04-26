@@ -119,28 +119,28 @@ a:hover {
     text-decoration: underline;
 }
 
-#analysis table {
+#bom table {
     width: 100%;
     border-collapse: collapse;
 }
 
-#analysis tbody tr:nth-child(odd) {
+#bom tbody tr:nth-child(odd) {
     background: rgba(243,83,66,0.25);
 }
 
-#analysis th {
+#bom th {
     background: #333;
     color: white;
     font-weight: bold;
     text-align: center;
 }
 
-#analysis td, #analysis th {
+#bom td, #analysis th {
     padding: 6px;
     border: 1px solid #CCC;
 }
 
-#analysis td {
+#bom td {
     text-align: left;
     min-width: 70px;
 }
