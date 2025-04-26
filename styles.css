@@ -119,19 +119,6 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .image-section {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .image-description {
-        max-width: 100%;
-        margin-top: 10px;
-        text-align: center;
-    }
-    
 #analysis table {
     width: 100%;
     border-collapse: collapse;
@@ -161,5 +148,18 @@ a:hover {
 .dollars:before {
     content: "$ ";
 }
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .image-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-description {
+        max-width: 100%;
+        margin-top: 10px;
+        text-align: center;
+    }
     
 }
